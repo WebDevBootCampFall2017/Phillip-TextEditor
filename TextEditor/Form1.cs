@@ -68,5 +68,18 @@ namespace TextEditor
         {
 
         }
+
+        private void programInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Text Editor" +
+                "\nPhillip Dillard" +
+                "\nVersion 1.0" +
+                "\nWebDevelopBootCamp");
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
