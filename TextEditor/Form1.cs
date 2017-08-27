@@ -95,11 +95,22 @@ namespace TextEditor
 
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (fontDialog1.ShowDialog() == DialogResult.OK) richTextBox1.Font = fontDialog1.Font;
+            fontDialog1.ShowColor = true;
+            fontDialog1.Font = richTextBox1.Font;
+            fontDialog1.Color = richTextBox1.ForeColor;
+
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+                richTextBox1.Font = fontDialog1.Font;
+               richTextBox1.ForeColor = fontDialog1.Color;
 
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fontDialog1_Apply(object sender, EventArgs e)
         {
 
         }
