@@ -19,7 +19,13 @@ namespace TextEditor
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            richTextBox1.Clear();
+            newFile();
+        }
+
+        private void newFile()
+        {
+            richTextBox1.Text = null;
+            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -80,6 +86,22 @@ namespace TextEditor
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK) richTextBox1.Font = fontDialog1.Font;
+
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
