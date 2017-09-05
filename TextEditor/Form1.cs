@@ -7,11 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace TextEditor
 {
+    
+    
     public partial class FormTextEditor : Form
     {
+        String path; string[] patharray;
+        public string FindText;
+        private bool matchCase;
+        private object btn;
+
         public FormTextEditor()
         {
             InitializeComponent();
@@ -20,6 +28,7 @@ namespace TextEditor
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             newFile();
+            
         }
 
         private void newFile()
@@ -46,22 +55,24 @@ namespace TextEditor
             ofd.Title = "Open a file...";
             if (ofd.ShowDialog() == DialogResult.OK) 
             {
-                System.IO.StreamReader sr = new System.IO.StreamReader(ofd.FileName);
-                richTextBox1.Text = sr.ReadToEnd();
+                StreamReader sr = new StreamReader(ofd.FileName);
+                path = ofd.FileName;
+                richTextBox1.Text = File.ReadAllText(path);
+                patharray = File.ReadAllLines(path);
                 sr.Close();
             }
+            Text = ofd.FileName;
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        /*{
+           
+            File.WriteAllText(path, richTextBox1.Text);
+        }  */
         {
-            SaveFileDialog svf = new SaveFileDialog();
-            svf.Filter = "Text Files (.txt)|*.txt";
-            svf.Title = "Save file...";
-            if (svf.ShowDialog() == DialogResult.OK) 
+            SaveFileDialog sfd = new SaveFileDialog();
             {
-                System.IO.StreamWriter sw = new System.IO.StreamWriter(svf.FileName);
-                sw.Write(richTextBox1.Text);
-                sw.Close();
+                File.WriteAllText(path, richTextBox1.Text);  
             }
         }
 
@@ -85,12 +96,21 @@ namespace TextEditor
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Text Files (.txt)|*.txt";
+            sfd.Title = "Save file...";
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                System.IO.StreamWriter sw = new System.IO.StreamWriter(sfd.FileName);
+                sw.Write(richTextBox1.Text);
+                sw.Close();
+            }
         }
 
         private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+              
+
         }
 
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
@@ -111,6 +131,55 @@ namespace TextEditor
         }
 
         private void fontDialog1_Apply(object sender, EventArgs e)
+        {
+
+        }
+
+        private void findToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           //int x=new int();
+            Form1 r = new Form1();
+            r.ShowDialog();
+            if (FindText != "")
+            {
+                richTextBox1.Find(FindText);
+            }
+          
+        }
+
+
+       
+
+        private void customizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wordWrapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            switch (wordWrapToolStripMenuItem.Checked)
+            {
+                case true:
+                    wordWrapToolStripMenuItem.Checked = false;
+                    richTextBox1.WordWrap = false;
+                    richTextBox1.ScrollBars = RichTextBoxScrollBars.Both;
+                    break;
+                case false:
+                    wordWrapToolStripMenuItem.Checked = true;
+                    richTextBox1.WordWrap = true;
+                    richTextBox1.ScrollBars = RichTextBoxScrollBars.Vertical;
+                    break;
+
+            }
+                
+        }
+
+        private void findAndReplaceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void theme1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

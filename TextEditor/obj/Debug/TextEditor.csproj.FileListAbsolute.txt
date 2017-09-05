@@ -7,3 +7,5 @@ C:\Users\phill\Documents\Visual Studio 2017\Projects\TextEditor\TextEditor\obj\D
 C:\Users\phill\Documents\Visual Studio 2017\Projects\TextEditor\TextEditor\obj\Debug\TextEditor.csproj.GenerateResource.Cache
 C:\Users\phill\Documents\Visual Studio 2017\Projects\TextEditor\TextEditor\obj\Debug\TextEditor.exe
 C:\Users\phill\Documents\Visual Studio 2017\Projects\TextEditor\TextEditor\obj\Debug\TextEditor.pdb
+C:\Users\phill\Documents\Visual Studio 2017\Projects\TextEditor\TextEditor\obj\Debug\TextEditor.FindAndReplace.resources
+C:\Users\phill\Documents\Visual Studio 2017\Projects\TextEditor\TextEditor\obj\Debug\TextEditor.Form1.resources
