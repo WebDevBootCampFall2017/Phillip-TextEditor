@@ -44,6 +44,9 @@
             this.findAndReplaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.theme1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.theme2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.theme3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wordWrapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,9 +55,6 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.theme1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.theme2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.theme3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +91,7 @@
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -193,6 +193,28 @@
             this.customizeToolStripMenuItem.Text = "Window Theme";
             this.customizeToolStripMenuItem.Click += new System.EventHandler(this.customizeToolStripMenuItem_Click);
             // 
+            // theme1ToolStripMenuItem
+            // 
+            this.theme1ToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.theme1ToolStripMenuItem.Name = "theme1ToolStripMenuItem";
+            this.theme1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.theme1ToolStripMenuItem.Text = "Theme 1";
+            this.theme1ToolStripMenuItem.Click += new System.EventHandler(this.theme1ToolStripMenuItem_Click);
+            // 
+            // theme2ToolStripMenuItem
+            // 
+            this.theme2ToolStripMenuItem.Name = "theme2ToolStripMenuItem";
+            this.theme2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.theme2ToolStripMenuItem.Text = "Theme 2";
+            this.theme2ToolStripMenuItem.Click += new System.EventHandler(this.theme2ToolStripMenuItem_Click);
+            // 
+            // theme3ToolStripMenuItem
+            // 
+            this.theme3ToolStripMenuItem.Name = "theme3ToolStripMenuItem";
+            this.theme3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.theme3ToolStripMenuItem.Text = "Theme 3";
+            this.theme3ToolStripMenuItem.Click += new System.EventHandler(this.theme3ToolStripMenuItem_Click);
+            // 
             // wordWrapToolStripMenuItem
             // 
             this.wordWrapToolStripMenuItem.Checked = true;
@@ -238,26 +260,6 @@
             // saveFileDialog1
             // 
             this.saveFileDialog1.CheckFileExists = true;
-            // 
-            // theme1ToolStripMenuItem
-            // 
-            this.theme1ToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
-            this.theme1ToolStripMenuItem.Name = "theme1ToolStripMenuItem";
-            this.theme1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.theme1ToolStripMenuItem.Text = "Theme 1";
-            this.theme1ToolStripMenuItem.Click += new System.EventHandler(this.theme1ToolStripMenuItem_Click);
-            // 
-            // theme2ToolStripMenuItem
-            // 
-            this.theme2ToolStripMenuItem.Name = "theme2ToolStripMenuItem";
-            this.theme2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.theme2ToolStripMenuItem.Text = "Theme 2";
-            // 
-            // theme3ToolStripMenuItem
-            // 
-            this.theme3ToolStripMenuItem.Name = "theme3ToolStripMenuItem";
-            this.theme3ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.theme3ToolStripMenuItem.Text = "Theme 3";
             // 
             // FormTextEditor
             // 

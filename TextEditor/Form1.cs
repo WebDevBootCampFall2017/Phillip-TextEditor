@@ -17,8 +17,8 @@ namespace TextEditor
     {
         String path; string[] patharray;
         public string FindText;
-        private bool matchCase;
-        private object btn;
+        //private bool matchCase;
+       // private object btn;
 
         public FormTextEditor()
         {
@@ -176,12 +176,34 @@ namespace TextEditor
 
         private void findAndReplaceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+           //create find and repace dialog box
         }
 
         private void theme1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+          /*  theme1ToolStripMenuItem.Checked = true;
+            richTextBox1.ForeColor = Color.Red();
+            richTextBox1.BackColor = Color.Blue();
+            menuStrip1.ForeColor = Color.Red();
+           menuStrip1.ForeColor = Color.Blue();*/
+        }
 
+        private void theme2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           /* theme2ToolStripMenuItem.Checked = true;
+            richTextBox1.ForeColor = Color.Yellow();
+            richTextBox1.BackColor = Color.Black();
+            menuStrip1.ForeColor = Color.Yellow();
+            menuStrip1.BackColor = Color.Black();*/
+        }
+
+        private void theme3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           /* theme2ToolStripMenuItem.Checked = true;
+            richTextBox1.ForeColor = Color.DodgerBlue();
+            richTextBox1.BackColor = Color.Gold();
+            menuStrip1.ForeColor = Color.DodgerBlue();
+            menuStrip1.BackColor = Color.Gold();*/
         }
     }
 }
