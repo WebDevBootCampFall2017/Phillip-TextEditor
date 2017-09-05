@@ -176,7 +176,14 @@ namespace TextEditor
 
         private void findAndReplaceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           //create find and repace dialog box
+            //create find and repace dialog box
+            FindAndReplace r = new FindAndReplace();
+            r.ShowDialog();
+            if (FindText != "")
+            {
+                richTextBox1.Find(FindText);
+            }
+
         }
 
         private void theme1ToolStripMenuItem_Click(object sender, EventArgs e)
