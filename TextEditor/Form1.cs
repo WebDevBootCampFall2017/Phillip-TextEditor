@@ -181,29 +181,36 @@ namespace TextEditor
 
         private void theme1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          /*  theme1ToolStripMenuItem.Checked = true;
-            richTextBox1.ForeColor = Color.Red();
-            richTextBox1.BackColor = Color.Blue();
-            menuStrip1.ForeColor = Color.Red();
-           menuStrip1.ForeColor = Color.Blue();*/
+           
+                      theme1ToolStripMenuItem.Checked = true;
+                      richTextBox1.ForeColor = Color.Red;
+                      richTextBox1.BackColor = Color.Blue;
+                      menuStrip1.ForeColor = Color.Red;
+                     menuStrip1.ForeColor = Color.Blue;
+         
         }
 
         private void theme2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           /* theme2ToolStripMenuItem.Checked = true;
-            richTextBox1.ForeColor = Color.Yellow();
-            richTextBox1.BackColor = Color.Black();
-            menuStrip1.ForeColor = Color.Yellow();
-            menuStrip1.BackColor = Color.Black();*/
+           
+                     theme2ToolStripMenuItem.Checked = true;
+                     richTextBox1.ForeColor = Color.Yellow;
+                     richTextBox1.BackColor = Color.Black;
+                     menuStrip1.ForeColor = Color.Yellow;
+                     menuStrip1.BackColor = Color.Black;
+               
+            
         }
 
         private void theme3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           /* theme2ToolStripMenuItem.Checked = true;
-            richTextBox1.ForeColor = Color.DodgerBlue();
-            richTextBox1.BackColor = Color.Gold();
-            menuStrip1.ForeColor = Color.DodgerBlue();
-            menuStrip1.BackColor = Color.Gold();*/
+          
+            theme2ToolStripMenuItem.Checked = true;
+            richTextBox1.ForeColor = Color.DodgerBlue;
+            richTextBox1.BackColor = Color.Gold;
+            menuStrip1.ForeColor = Color.DodgerBlue;
+            menuStrip1.BackColor = Color.Gold;
+           
         }
     }
 }
